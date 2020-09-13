@@ -1,0 +1,103 @@
+$blue: rgb(104, 136, 177);
+%button {
+  text-transform: uppercase;
+  width: 300px;
+  height: 70px;
+  font-family: "Ubuntu", sans-serif;
+  letter-spacing: 3px;
+  font-size: 1.3em;
+  text-align: center;
+  color: white;
+  background-color: $blue;
+  border-radius: 100px;
+  outline: none;
+  border: none;
+}
+
+body,
+html {
+  margin: 0;
+}
+.first {
+  background-image: url("../img/section1bg.jpg");
+  background-repeat: no-repeat;
+  font-family: "Ubuntu", sans-serif;
+  background-size: cover;
+  color: white;
+  height: 100%;
+  padding-top: 2%;
+  width: 100vw;
+  padding-bottom: 20px;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+.logo {
+  justify-content: center;
+  display: flex;
+  flex-basis: 30%;
+  align-items: center;
+
+  img {
+    width: 60px;
+    height: 50px;
+  }
+  h1 {
+    margin-left: 10px;
+    font-weight: bold;
+    font-size: 1.3em;
+  }
+}
+.nav-link {
+  flex-basis: 40%;
+  display: flex;
+  justify-content: space-around;
+  list-style-type: none;
+}
+.welcome {
+  margin-top: 200px;
+  text-align: center;
+  h1 {
+    font-size: 4em;
+  }
+  p {
+    font-family: "Lato", sans-serif;
+    font-size: 1.3em;
+  }
+}
+.popular-menu {
+  margin-top: 350px;
+  h1 {
+    text-transform: uppercase;
+    color: $blue;
+    text-align: center;
+    font-size: 2em;
+    margin: 100px 0;
+  }
+  button {
+    @extend %button;
+    display: block;
+    margin: 100px auto 200px auto;
+  }
+}
+
+.menu {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(15%, 25%));
+  justify-content: space-around;
+  gap: 20px;
+
+  .menu-item {
+    color: rgb(79, 79, 78);
+    img {
+      width: 100%;
+    }
+    background-color: #fff;
+    .details {
+      padding: 10px;
+      font-family: "Lato", sans-serif;
+    }
+  }
+}
