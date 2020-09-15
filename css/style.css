@@ -1,0 +1,251 @@
+.delivery button, .more, .popular-menu button {
+  text-transform: uppercase;
+  width: 300px;
+  height: 70px;
+  font-family: "Ubuntu", sans-serif;
+  letter-spacing: 3px;
+  font-size: 1.3em;
+  text-align: center;
+  color: white;
+  background-color: #6888b1;
+  border-radius: 100px;
+  outline: none;
+  border: none;
+}
+
+.delivery .dots4, .delivery .dots3, .dots2, .dots1 {
+  width: auto !important;
+  height: auto !important;
+  position: absolute;
+}
+
+body,
+html {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.first {
+  background-image: url("../img/section1bg.jpg");
+  background-repeat: no-repeat;
+  font-family: "Ubuntu", sans-serif;
+  background-size: cover;
+  color: white;
+  height: 100%;
+  padding-top: 2%;
+  width: 100%;
+  padding-bottom: 20px;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+.logo {
+  justify-content: center;
+  display: flex;
+  flex-basis: 30%;
+  align-items: center;
+}
+.logo img {
+  width: 60px;
+  height: 50px;
+}
+.logo h1 {
+  margin-left: 10px;
+  font-weight: bold;
+  font-size: 1.3em;
+}
+
+.nav-link {
+  flex-basis: 40%;
+  display: flex;
+  justify-content: space-around;
+  list-style-type: none;
+}
+
+.welcome {
+  margin-top: 200px;
+  text-align: center;
+}
+.welcome h1 {
+  font-size: 4em;
+}
+.welcome p {
+  font-family: "Lato", sans-serif;
+  font-size: 1.3em;
+}
+
+.popular-menu {
+  margin-top: 350px;
+}
+.popular-menu h1 {
+  text-transform: uppercase;
+  color: #6888b1;
+  text-align: center;
+  font-size: 2em;
+  margin: 100px 0;
+}
+.popular-menu button {
+  display: block;
+  margin: 100px auto 200px auto;
+}
+
+.menu {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(15%, 25%));
+  justify-content: space-around;
+  gap: 20px;
+}
+.menu .menu-item {
+  color: #4f4f4e;
+  background-color: #fff;
+}
+.menu .menu-item img {
+  width: 100%;
+}
+.menu .menu-item .details {
+  padding: 10px;
+  font-family: "Lato", sans-serif h2;
+  font-family-font-family: "Ubuntu", sans-serif;
+}
+
+.discount-menu {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(600px, 1fr));
+  grid-template-rows: minmax(300px, 700px);
+  margin: 0;
+}
+.discount-menu img {
+  width: 100%;
+  height: 100%;
+}
+
+.discount-details {
+  padding: 40% 0 0 5%;
+}
+.discount-details.d2 {
+  padding: 40% 0 0 30%;
+}
+.discount-details.d2 h1 {
+  width: 60%;
+}
+.discount-details.d2 p {
+  width: 80%;
+}
+.discount-details h1 {
+  font-family: "Ubuntu", sans-serif;
+  font-size: 2.1em;
+}
+.discount-details p {
+  width: 60%;
+  font-family: "Lato", sans-serif;
+}
+
+.more {
+  margin: 100px 0;
+}
+
+.discount-menu-img {
+  position: relative;
+  z-index: 1;
+}
+
+.dots1 {
+  bottom: -50px;
+  left: 40%;
+}
+
+.dots2 {
+  bottom: -50px;
+  right: 20%;
+}
+
+.how {
+  padding-top: 3%;
+  background-color: #6888b1;
+  margin: 0;
+  text-align: center;
+  color: white;
+}
+.how h1 {
+  font-family: "Ubuntu", sans-serif;
+  font-size: 2.2em;
+  margin: 5%;
+}
+.how h1.head {
+  font-size: 2.5em;
+  text-transform: uppercase;
+}
+.how p {
+  font-family: "Lato", sans-serif;
+}
+
+.step {
+  padding: 10% 7%;
+  display: flex;
+}
+
+.step-item {
+  margin: 0 20px;
+}
+
+.delivery {
+  position: relative;
+  text-align: center;
+  padding: 7% 25%;
+  background-image: url(../img/section5.jpg);
+  background-size: cover;
+}
+.delivery h1 {
+  font-family: "Ubuntu", sans-serif;
+  font-size: 4em;
+  color: #6888b1;
+}
+.delivery p {
+  font-family: "Lato", sans-serif;
+  color: #6888b1;
+  font-size: 1.3em;
+}
+.delivery button {
+  margin-top: 5%;
+}
+.delivery .dots3 {
+  top: 10px;
+  left: 20%;
+}
+.delivery .dots4 {
+  bottom: -50px;
+  right: 20%;
+}
+
+.last {
+  background-image: url("../img/footer.jpg");
+  width: 100%;
+  background-size: cover;
+  text-align: center;
+}
+.last .quote {
+  padding: 5% 20%;
+}
+.last img {
+  margin: 0 2%;
+}
+.last h1 {
+  margin: 0;
+  font-family: "Raleway", sans-serif;
+  font-size: 9em;
+  color: #6888b1;
+}
+.last h2 {
+  font-family: "Ubuntu", sans-serif;
+  font-size: 2em;
+  color: #6888b1;
+}
+.last p {
+  font-family: "Lato", sans-serif;
+  color: #6888b1;
+  font-size: 1.3em;
+}
