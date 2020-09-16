@@ -1,0 +1,58 @@
+@media (max-width: 700px) {
+  nav {
+    flex-direction: column;
+    .nav-link {
+      padding-left: 10px;
+    }
+  }
+  .m2 {
+    margin: 0 auto;
+    padding: 40% 0 0 15%;
+  }
+  .m3 {
+    order: 1;
+  }
+  .discount-details.d2 {
+    padding: 20% 0 0 30%;
+  }
+}
+@media (max-width: 550px) {
+  button {
+    width: 150px !important;
+    font-size: 1.2em !important;
+  }
+
+  .menu {
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    .menu-item {
+      margin: 0 10px;
+    }
+  }
+  .discount-menu {
+    grid-template-columns: minmax(200px, 1fr);
+    grid-template-rows: minmax(300px, 400px);
+  }
+  .step {
+    flex-direction: column;
+  }
+  .delivery {
+    background-image: none;
+    background: #ecede8;
+    h1 {
+      font-size: 3.3em;
+    }
+  }
+  .quote {
+    padding: 5% 10% !important;
+
+    h1 {
+      font-size: 5em;
+    }
+    p {
+      font-size: 1.2em;
+    }
+    background: none;
+    background-color: #dcebc0;
+  }
+}

@@ -1,6 +1,6 @@
 $blue: rgb(104, 136, 177);
-$ubuntu: 'Ubuntu',sans-serif;
-$lato: "Lato",sans-serif;
+$ubuntu: "Ubuntu", sans-serif;
+$lato: "Lato", sans-serif;
 
 %button {
   text-transform: uppercase;
@@ -37,8 +37,6 @@ html {
   padding-top: 2%;
   width: 100%;
   padding-bottom: 20px;
-  
- 
 }
 nav {
   display: flex;
@@ -108,15 +106,14 @@ nav {
     background-color: #fff;
     .details {
       padding: 10px;
-      font-family: $lato
-      h2 {
+      font-family: $lato h2 {
         font-family: $ubuntu;
       }
     }
   }
 }
 .discount-menu {
-  width:100%;
+  width: 100%;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(600px, 1fr));
   grid-template-rows: minmax(300px, 700px);
@@ -144,7 +141,7 @@ nav {
   }
   p {
     width: 60%;
-    font-family: $lato
+    font-family: $lato;
   }
 }
 
@@ -166,93 +163,104 @@ nav {
   bottom: -50px;
   right: 20%;
 }
-.how{
+.how {
   padding-top: 3%;
   background-color: $blue;
   margin: 0;
   text-align: center;
   color: white;
-  h1{
-    font-family:$ubuntu ;
+  h1 {
+    font-family: $ubuntu;
     font-size: 2.2em;
     margin: 5%;
-    &.head{
+    &.head {
       font-size: 2.5em;
       text-transform: uppercase;
     }
   }
-  p{
+  p {
     font-family: $lato;
   }
 }
-.step{
+.step {
   padding: 10% 7%;
-  display:flex;
-  
+  display: flex;
 }
-.step-item{
+.step-item {
   margin: 0 20px;
 }
-.delivery{
+.delivery {
   position: relative;
-  text-align:center;
+  text-align: center;
   padding: 7% 25%;
   background-image: url(../img/section5.jpg);
-  background-size:cover;
-  
+  background-size: cover;
 
-  h1{
-    font-family:$ubuntu ;
+  h1 {
+    font-family: $ubuntu;
     font-size: 4em;
     color: $blue;
   }
-  p{
+  p {
     font-family: $lato;
     color: $blue;
     font-size: 1.3em;
-    
   }
-  button{
+  button {
     @extend %button;
     margin-top: 5%;
   }
-  .dots3{
+  .dots3 {
     @extend %dots;
-    top:10px;
+    top: 10px;
     left: 20%;
   }
-  .dots4{
+  .dots4 {
     @extend %dots;
     bottom: -50px;
-  right: 20%;
+    right: 20%;
   }
 }
-.last{
-  background-image: url('../img/footer.jpg');
+.last {
   width: 100%;
   background-size: cover;
   text-align: center;
-  
-  .quote{
+
+  .quote {
     padding: 5% 20%;
+    background-color: #dcebc0;
   }
-  img{
-    margin:0 2%;
+  img {
+    margin: 0 2%;
   }
-  h1{
-    margin:0;
-    font-family: 'Raleway', sans-serif;
+  h1 {
+    margin: 0;
+    font-family: "Raleway", sans-serif;
     font-size: 9em;
     color: $blue;
   }
-  h2{
-    font-family:$ubuntu ;
+  h2 {
+    font-family: $ubuntu;
     font-size: 2em;
     color: $blue;
   }
-  p{
+  i {
+    padding: 10px;
+    background-color: $blue;
+    border-radius: 50%;
+    color: #dcebc0;
+    margin: 0 10px;
+  }
+  .fa-facebook-f {
+    padding: 10px 15px;
+  }
+  p {
     font-family: $lato;
     color: $blue;
     font-size: 1.3em;
   }
 }
+path {
+  fill: $blue;
+}
+@import "media";
