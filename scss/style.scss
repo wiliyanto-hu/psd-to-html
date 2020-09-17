@@ -1,6 +1,7 @@
 $blue: rgb(104, 136, 177);
 $ubuntu: "Ubuntu", sans-serif;
 $lato: "Lato", sans-serif;
+$matcha: #dcebc0;
 
 %button {
   text-transform: uppercase;
@@ -115,8 +116,8 @@ nav {
 .discount-menu {
   width: 100%;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(600px, 1fr));
-  grid-template-rows: minmax(300px, 700px);
+  grid-template-columns: repeat(2, minmax(200px, 1fr));
+  grid-auto-rows: minmax(200px, 700px);
   margin: 0;
   img {
     width: 100%;
@@ -222,6 +223,7 @@ nav {
   }
 }
 .last {
+  background-color: $matcha;
   width: 100%;
   background-size: cover;
   text-align: center;
@@ -260,7 +262,46 @@ nav {
     font-size: 1.3em;
   }
 }
+svg {
+  display: block;
+}
 path {
   fill: $blue;
+}
+footer {
+  background-color: $matcha;
+}
+.footer-text {
+  text-align: left;
+  color: white;
+  font-family: $ubuntu;
+  display: flex;
+  justify-content: space-around;
+  background-color: $blue;
+  margin: 0;
+  h3,
+  h4 {
+    margin: 0;
+    text-transform: uppercase;
+  }
+}
+.left {
+  flex-basis: 30%;
+  p {
+    color: white;
+  }
+}
+.right {
+  flex-basis: 40%;
+  display: flex;
+  justify-content: space-between;
+}
+.list ul {
+  padding-left: 0;
+}
+.list li {
+  font-family: $lato;
+  list-style-type: none;
+  padding-left: 0;
 }
 @import "media";
