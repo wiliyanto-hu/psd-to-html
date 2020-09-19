@@ -1,4 +1,4 @@
-$blue: rgb(104, 136, 177);
+  $blue: rgb(104, 136, 177);
 $ubuntu: "Ubuntu", sans-serif;
 $lato: "Lato", sans-serif;
 $matcha: #dcebc0;
@@ -232,9 +232,7 @@ nav {
     padding: 5% 20%;
     background-color: #dcebc0;
   }
-  img {
-    margin: 0 2%;
-  }
+  
   h1 {
     margin: 0;
     font-family: "Raleway", sans-serif;
@@ -264,21 +262,30 @@ nav {
 }
 svg {
   display: block;
+  position: relative;
+  z-index: 2;
 }
 path {
   fill: $blue;
+  position: relative;
+  z-index:2;
 }
 footer {
+  position: relative;
   background-color: $matcha;
+  z-index: 2;
+  
+  
 }
 .footer-text {
+  position: relative;
   text-align: left;
   color: white;
   font-family: $ubuntu;
   display: flex;
   justify-content: space-around;
   background-color: $blue;
-  margin: 0;
+  z-index: 2;
   h3,
   h4 {
     margin: 0;
@@ -303,5 +310,11 @@ footer {
   font-family: $lato;
   list-style-type: none;
   padding-left: 0;
+}
+.design-bottom{
+  position: absolute;
+  left:0;
+  top: -90px;
+  z-index: 1;
 }
 @import "media";

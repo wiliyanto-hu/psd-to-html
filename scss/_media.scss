@@ -34,6 +34,9 @@
   .more {
     margin: 10px 0;
   }
+  .design-bottom{
+   display: none;
+  }
 }
 @media (max-width: 550px) {
   button {
@@ -92,4 +95,5 @@
       justify-content: space-around;
     }
   }
+  
 }
